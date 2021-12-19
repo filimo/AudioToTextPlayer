@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0372997276F961900885785 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F0372996276F961900885785 /* README.md */; };
+		F037299A276F98E100885785 /* Intro.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0372999276F98E100885785 /* Intro.gif */; };
+		F05FF2F5276EE00200924769 /* AudioToTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FF2F4276EE00200924769 /* AudioToTextApp.swift */; };
+		F05FF2F7276EE00200924769 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FF2F6276EE00200924769 /* ContentView.swift */; };
+		F05FF2F9276EE00400924769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05FF2F8276EE00400924769 /* Assets.xcassets */; };
+		F05FF2FC276EE00400924769 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05FF2FB276EE00400924769 /* Preview Assets.xcassets */; };
+		F05FF313276F037C00924769 /* MYAudioTapProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F05FF311276F037C00924769 /* MYAudioTapProcessor.m */; };
+		F05FF316276F044200924769 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FF315276F044200924769 /* AudioService.swift */; };
+		F0F2051C276F59840078EAC6 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2051B276F59840078EAC6 /* AVPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0372996276F961900885785 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F0372999276F98E100885785 /* Intro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Intro.gif; sourceTree = "<group>"; };
+		F05FF2F1276EE00200924769 /* AudioToTextPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioToTextPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05FF2F4276EE00200924769 /* AudioToTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioToTextApp.swift; sourceTree = "<group>"; };
+		F05FF2F6276EE00200924769 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F05FF2F8276EE00400924769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F05FF2FB276EE00400924769 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F05FF2FD276EE00400924769 /* AudioToText.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioToText.entitlements; sourceTree = "<group>"; };
+		F05FF30A276F002200924769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F05FF311276F037C00924769 /* MYAudioTapProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAudioTapProcessor.m; sourceTree = "<group>"; };
+		F05FF312276F037C00924769 /* MYAudioTapProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAudioTapProcessor.h; sourceTree = "<group>"; };
+		F05FF314276F03A800924769 /* AudioToText-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioToText-Bridging-Header.h"; sourceTree = "<group>"; };
+		F05FF315276F044200924769 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		F0F2051B276F59840078EAC6 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F05FF2EE276EE00200924769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0372994276F8DF000885785 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F05FF315276F044200924769 /* AudioService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F0372995276F8E0400885785 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F05FF30B276F033D00924769 /* MYAudioTapProcessor */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F0372998276F98D700885785 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F0372999276F98E100885785 /* Intro.gif */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F05FF2E8276EE00200924769 = {
+			isa = PBXGroup;
+			children = (
+				F0372998276F98D700885785 /* Assets */,
+				F0372996276F961900885785 /* README.md */,
+				F05FF2F3276EE00200924769 /* AudioToTextPlayer */,
+				F05FF2F2276EE00200924769 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F05FF2F2276EE00200924769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F05FF2F1276EE00200924769 /* AudioToTextPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F05FF2F3276EE00200924769 /* AudioToTextPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F0F2051A276F59750078EAC6 /* Extention */,
+				F0372994276F8DF000885785 /* Service */,
+				F0372995276F8E0400885785 /* Helper */,
+				F05FF30A276F002200924769 /* Info.plist */,
+				F05FF2F4276EE00200924769 /* AudioToTextApp.swift */,
+				F05FF2F6276EE00200924769 /* ContentView.swift */,
+				F05FF2F8276EE00400924769 /* Assets.xcassets */,
+				F05FF2FD276EE00400924769 /* AudioToText.entitlements */,
+				F05FF2FA276EE00400924769 /* Preview Content */,
+			);
+			path = AudioToTextPlayer;
+			sourceTree = "<group>";
+		};
+		F05FF2FA276EE00400924769 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F05FF2FB276EE00400924769 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F05FF30B276F033D00924769 /* MYAudioTapProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				F05FF314276F03A800924769 /* AudioToText-Bridging-Header.h */,
+				F05FF312276F037C00924769 /* MYAudioTapProcessor.h */,
+				F05FF311276F037C00924769 /* MYAudioTapProcessor.m */,
+			);
+			path = MYAudioTapProcessor;
+			sourceTree = "<group>";
+		};
+		F0F2051A276F59750078EAC6 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				F0F2051B276F59840078EAC6 /* AVPlayer.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F05FF2F0276EE00200924769 /* AudioToTextPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F05FF300276EE00400924769 /* Build configuration list for PBXNativeTarget "AudioToTextPlayer" */;
+			buildPhases = (
+				F05FF2ED276EE00200924769 /* Sources */,
+				F05FF2EE276EE00200924769 /* Frameworks */,
+				F05FF2EF276EE00200924769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioToTextPlayer;
+			productName = AudioToText;
+			productReference = F05FF2F1276EE00200924769 /* AudioToTextPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F05FF2E9276EE00200924769 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F05FF2F0276EE00200924769 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = F05FF2EC276EE00200924769 /* Build configuration list for PBXProject "AudioToTextPlayer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F05FF2E8276EE00200924769;
+			productRefGroup = F05FF2F2276EE00200924769 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F05FF2F0276EE00200924769 /* AudioToTextPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F05FF2EF276EE00200924769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0372997276F961900885785 /* README.md in Resources */,
+				F037299A276F98E100885785 /* Intro.gif in Resources */,
+				F05FF2FC276EE00400924769 /* Preview Assets.xcassets in Resources */,
+				F05FF2F9276EE00400924769 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F05FF2ED276EE00200924769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05FF316276F044200924769 /* AudioService.swift in Sources */,
+				F05FF313276F037C00924769 /* MYAudioTapProcessor.m in Sources */,
+				F05FF2F7276EE00200924769 /* ContentView.swift in Sources */,
+				F05FF2F5276EE00200924769 /* AudioToTextApp.swift in Sources */,
+				F0F2051C276F59840078EAC6 /* AVPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F05FF2FE276EE00400924769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F05FF2FF276EE00400924769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F05FF301276EE00400924769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioToText/AudioToText.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AudioToTextPlayer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioToTextPlayer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio will be used to convert to text";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Audio will be used to convert to text";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.AudioToTextPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioToTextPlayer/Helper/MYAudioTapProcessor/AudioToText-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F05FF302276EE00400924769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AudioToText/AudioToText.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AudioToTextPlayer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioToTextPlayer/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio will be used to convert to text";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Audio will be used to convert to text";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.AudioToTextPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioToTextPlayer/Helper/MYAudioTapProcessor/AudioToText-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F05FF2EC276EE00200924769 /* Build configuration list for PBXProject "AudioToTextPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05FF2FE276EE00400924769 /* Debug */,
+				F05FF2FF276EE00400924769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F05FF300276EE00400924769 /* Build configuration list for PBXNativeTarget "AudioToTextPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05FF301276EE00400924769 /* Debug */,
+				F05FF302276EE00400924769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F05FF2E9276EE00200924769 /* Project object */;
+}
